@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalLift – Social Media Management for Local Businesses</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <a href="#home" class="logo">Local<span>Lift</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  <nav id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#customers">Target Customers</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#how">How It Works</a>
+    <a href="#contact" class="nav-cta">Contact Us</a>
+  </nav>
+</header>
+
+<!-- ===== HOME ===== -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <span class="tag">College Project – Entrepreneurship Development</span>
+    <h1>We help local businesses get customers <em>online</em>.</h1>
+    <p>LocalLift manages Instagram, Facebook and Google Business Profile for local shops, so owners can focus on their work while we take care of their online presence.</p>
+    <div class="hero-btns">
+      <a href="#pricing" class="btn">See Packages</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="phone">
+      <div class="post">📸 New reel posted</div>
+      <div class="post">⭐ Google profile updated</div>
+      <div class="post">📅 8 posts scheduled</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section light">
+  <h2>About Us</h2>
+  <p class="sub">LocalLift is my S.Y. B.Tech Entrepreneurship Development project (A.Y. 2026-27, I²IT Pune).</p>
+  <div class="grid3">
+    <div class="card reveal"><div class="icon">🔍</div><h3>The Problem</h3><p>Many local businesses are good at their work but weak online. Owners are busy, and agencies are costly.</p></div>
+    <div class="card reveal"><div class="icon">🎯</div><h3>Our Mission</h3><p>Give local businesses a full online presence at a price they can afford, every month.</p></div>
+    <div class="card reveal"><div class="icon">✅</div><h3>Objectives</h3><p>Better content, regular posting, updated Google profiles and more local customers.</p></div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <p class="sub">Everything a local business needs to look active online.</p>
+  <div class="grid4" id="servicesGrid"></div> <!-- filled by script.js -->
+</section>
+
+<!-- ===== TARGET CUSTOMERS ===== -->
+<section id="customers" class="section light">
+  <h2>Who We Serve</h2>
+  <p class="sub">Click a business type to see how we can help it.</p>
+  <div class="chips" id="chips"></div> <!-- filled by script.js -->
+  <div class="info-box" id="infoBox">Select a business type above.</div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="pricing" class="section">
+  <h2>Pricing</h2>
+  <p class="sub">Simple monthly packages.</p>
+  <div class="grid3 pricing">
+    <div class="price-card reveal">
+      <h3>Starter</h3><div class="price">₹3,999<small>/month</small></div>
+      <ul><li>8 social media posts</li><li>4 short reels</li><li>1 content shoot / month</li></ul>
+      <button class="btn choose" data-plan="Starter">Choose Starter</button>
+    </div>
+    <div class="price-card popular reveal">
+      <span class="badge">Most Popular</span>
+      <h3>Growth</h3><div class="price">₹6,999<small>/month</small></div>
+      <ul><li>12 posts / 8 reels</li><li>2 content shoots / month</li><li>Google Business Profile management</li><li>Offer / promotion creative</li><li>Monthly analytics</li></ul>
+      <button class="btn choose" data-plan="Growth">Choose Growth</button>
+    </div>
+    <div class="price-card reveal">
+      <h3>Pro</h3><div class="price">₹11,999<small>/month</small></div>
+      <ul><li>16 posts / 12 reels</li><li>3 shoots / month</li><li>Social media management</li><li>Competitor analysis</li><li>Monthly strategy meeting</li></ul>
+      <button class="btn choose" data-plan="Pro">Choose Pro</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS (flowchart) ===== -->
+<section id="how" class="section light">
+  <h2>How It Works</h2>
+  <p class="sub">A simple process that repeats every month.</p>
+  <div class="flow">
+    <div class="step reveal"><b>1</b><h4>Contact Us</h4><p>Fill the form or call us.</p></div>
+    <div class="arrow">➜</div>
+    <div class="step reveal"><b>2</b><h4>Discovery</h4><p>We check your brand and goals.</p></div>
+    <div class="arrow">➜</div>
+    <div class="step reveal"><b>3</b><h4>Planning</h4><p>Monthly content calendar, approved by you.</p></div>
+    <div class="arrow">➜</div>
+    <div class="step reveal"><b>4</b><h4>Production</h4><p>Shoot, design and schedule posts.</p></div>
+    <div class="arrow">➜</div>
+    <div class="step reveal"><b>5</b><h4>Review</h4><p>Report and improve next month.</p></div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p class="sub">Tell us about your business and we will get back to you.</p>
+  <div class="contact-wrap">
+    <form id="contactForm" novalidate>
+      <label>Your Name<input type="text" id="name" placeholder="Full name"><span class="err" id="nameErr"></span></label>
+      <label>Phone Number<input type="text" id="phone" placeholder="10-digit mobile number"><span class="err" id="phoneErr"></span></label>
+      <label>Email<input type="text" id="email" placeholder="you@example.com"><span class="err" id="emailErr"></span></label>
+      <label>Business Type
+        <select id="business"><option value="">-- Select --</option></select><span class="err" id="businessErr"></span></label>
+      <label>Package
+        <select id="plan"><option value="">-- Select --</option><option>Starter</option><option>Growth</option><option>Pro</option><option>Not sure yet</option></select><span class="err" id="planErr"></span></label>
+      <label>Message<textarea id="message" rows="3" placeholder="Tell us a little about your business"></textarea><span class="err" id="messageErr"></span></label>
+      <button type="submit" class="btn">Send Message</button>
+      <p class="success" id="success"></p>
+    </form>
+    <div class="contact-info">
+      <h3>Contact Details</h3>
+      <p>📧 contact@locallift.in</p>
+      <p>🌐 www.locallift.in</p>
+      <p>📍 Pune, Maharashtra</p>
+      <p>👤 Naresh Ganesh Chinchakar</p>
+      <p class="note">Demo form: messages are not actually sent anywhere (no server).</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 LocalLift – S.Y. B.Tech (Computer Engineering), Hope Foundation's I²IT, Hinjawadi, Pune</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
